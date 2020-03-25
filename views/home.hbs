@@ -1,0 +1,8 @@
+{{#each data}}
+<div class="alert alert-secondary alert-dismissible">
+    <a type="button" href="/todo/delete/{{ id }}" class="close">&times;</a>
+    <h4>{{ title }}</h4>
+    <p>{{ body }}</p>
+    <a href="/todo/edit/{{ id }}">Edit... </a>
+</div>
+{{/each}}

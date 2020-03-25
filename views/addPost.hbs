@@ -1,0 +1,18 @@
+<div class="alert alert-secondary">
+    <h4 class="text-center">Add Post</h4>
+    <form action="{{ url }}{{ data.id }}" method="{{ method }}">
+        <div class="form-group">
+            <label for="">Title</label>
+            <input type="text" value="{{ data.title }}" name="title" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Body</label>
+            <textarea name="body" id="" cols="30" class="form-control" rows="5"> {{ data.body }} </textarea>
+        </div>
+        <div class="form-group">
+            <label for="">Wriiten By:</label>
+            <input name="Auth" type="text" value="{{ data.auth }}" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+    </form>
+</div>
